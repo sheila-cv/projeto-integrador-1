@@ -46,13 +46,14 @@ def tela_capa():
             responsável pelo cadastramento, agendamento e gestão.""")
         
     elif opcao == "Lei Municipal 3380/2021":
-        lei_3380_2021 = r"C:\Projeto Integrador\LEI_3380_2021.pdf"
         st.subheader("Lei Municipal")
-        st.markdown("""Lei municipal 3380/2021
-            Leia na íntegra a lei que institui o Programa remédio em casa na Estância turística de Brotas, bem como
-            suas diretrizes.""")
+        st.markdown("""
+        **Lei municipal 3380/2021**  
+        Leia na íntegra a lei que institui o Programa remédio em casa na Estância turística de Brotas, bem como suas diretrizes.
+        """)
         with open("LEI_3380_2021/lei_3380_2021.pdf", "rb") as f:
             st.download_button("📄 Baixar Lei (PDF)", data=f, file_name="lei_3380_2021.pdf")
+
 
 
     elif opcao == "Contatos":
