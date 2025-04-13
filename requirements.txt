@@ -1,0 +1,5 @@
+streamlit
+python-dotenv
+mysql-connector-python
+os
+datetime
