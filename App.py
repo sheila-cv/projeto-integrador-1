@@ -148,7 +148,7 @@ elif st.session_state.pagina == "painel_controle":
 elif st.session_state.pagina == "cadastrar_usuario":
     st.title("➕ Cadastro de Novo Usuário")
     nome = st.text_input("Nome completo")
-    nascimento = st.date_input("Data de nascimento",min_value=datetime.date(1900,1,1), max_value=datetime.date.today())
+    nascimento = st.date_input("Data de nascimento",format="DD/MM/YYYY", min_value=date(1900, 1, 1), max_value=date.today())
     nome_mae = st.text_input("Nome da mãe")
     responsavel = st.text_input("Responsável")
     cns = st.text_input("CNS")
